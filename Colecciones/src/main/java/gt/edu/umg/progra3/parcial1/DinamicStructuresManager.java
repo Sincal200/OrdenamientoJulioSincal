@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class DinamicStructuresManager {
+public class DinamicStructuresManager<T> {
 
     List<T> values = new ArrayList<>();
 
@@ -14,7 +14,7 @@ public class DinamicStructuresManager {
     }
 
     public List<T> ordenar(){
-        //inserte codigo aqui
+        Collections.sort();
         return null;
     }
 
