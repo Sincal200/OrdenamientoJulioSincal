@@ -3,6 +3,7 @@ package gt.edu.umg.progra3.parcial1;
 import java.nio.charset.CoderMalfunctionError;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class DinamicStructuresManager<T> {
@@ -14,12 +15,13 @@ public class DinamicStructuresManager<T> {
     }
 
     public List<T> ordenar(){
-        Collections.sort();
-        return null;
+        Collections.sort(values, new Comparador()); //
+        return values;
     }
 
     public List<T> ordenarInversa(){
-        //inserte codigo aqui
+        Collections.sort(values, new Comparador()); //
+        Collections.reverse(values); //
         return values;
     }
 

@@ -1,9 +1,6 @@
 package gt.edu.umg.progra3.parcial1;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class StaticStructureManager<T> {
 
@@ -14,14 +11,15 @@ public class StaticStructureManager<T> {
     }
 
     public T[] ordenar(){
-        //inserte codigo aqui
+        Arrays.sort(values, new Comparador());
         return values;
     }
 
     public T[] ordenarInversa(){
-        //inserte codigo aqui
-
-        return null;
+        Arrays.sort(values, new Comparador());
+        Collections.reverse(Arrays.asList(values));
+        return values;
     }
+
 
 }
